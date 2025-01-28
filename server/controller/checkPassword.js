@@ -15,8 +15,10 @@ async function checkPassword(request, response) {
         return response.status(400).json({
             success:false,
             message:"Invalid credentials",
-            error:true
-        }) 
+            error:true,
+          console.log(error)
+        })
+      
     }
 
     const tokenData ={
